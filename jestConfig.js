@@ -1,6 +1,17 @@
 /**
  * Everything works without jestConfig as well
  * so we can remove it from package.json jest config
+ *
+ * if you need to do something before run tests add following to your package.json:
+ *
+ * "jest": {
+ *   "verbose": true,
+ *   "setupTestFrameworkScriptFile": "<rootDir>/jestConfig.js",
+ *   "moduleDirectories": ["node_modules", "app"]
+ * }
+ *
+ * And save this file as jestConfig.js in your root folder, see example of what you can do there
+ * below:
  */
 
 /*

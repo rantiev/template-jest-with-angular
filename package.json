@@ -7,11 +7,8 @@
     "angular": "1.6.4"
   },
   "devDependencies": {
-    "angular-mocks": "^1.6.4",
-    "jest": "20.0.4",
-    "jest-preset-angular": "2.0.3",
-    "typescript": "^2.3.4",
-    "zone.js": "^0.8.12"
+    "angular-mocks": "1.6.4",
+    "jest": "20.0.4"
   },
   "scripts": {
     "test": "jest",
@@ -22,7 +19,6 @@
   "license": "ISC",
   "jest": {
     "verbose": true,
-    "setupTestFrameworkScriptFile": "<rootDir>/jestConfig.js",
     "moduleDirectories": ["node_modules", "app"]
   }
 }
