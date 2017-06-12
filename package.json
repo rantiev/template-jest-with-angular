@@ -19,6 +19,7 @@
   "license": "ISC",
   "jest": {
     "verbose": true,
+    "collectCoverage": true,
     "moduleDirectories": ["node_modules", "app"]
   }
 }
