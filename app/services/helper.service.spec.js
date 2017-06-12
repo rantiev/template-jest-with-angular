@@ -1,8 +1,8 @@
-require("angular");
-require("angular-mocks");
+require('angular');
+require('angular-mocks');
 
 require('../app.js');
-require("../services/helper.service.js");
+require('./helper.service.js');
 
 describe('helper service', function () {
     let _helperService;

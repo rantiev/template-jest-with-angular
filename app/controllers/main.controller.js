@@ -2,13 +2,16 @@
 
     angular
         .module('myApp')
-        .controller('MainController', main);
+        .controller('MainController', MainController);
 
-    function main (
+    function MainController (
         $scope
     ) {
         $scope.title = 'Page title!';
         $scope.sum = sum;
+
+        $scope.headerText = 'here';
+        $scope.footerText = 'here as well';
     }
 
     /**

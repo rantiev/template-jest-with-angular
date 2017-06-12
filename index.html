@@ -3,11 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Jest with angular tests example</title>
+	<link rel="stylesheet" href="style.css">
 </head>
-<body ng-controller="main">
-	<h1>{{title}}</h1>
+<body ng-controller="MainController">
+
+	<my-header text="headerText"></my-header>
+
+	<div class="content">
+		<h1>{{title}}</h1>
+	</div>
+
+	<my-footer text="footerText"></my-footer>
 
 	<script src="node_modules/angular/angular.min.js"></script>
 	<script src="app/app.js"></script>
+	<script src="app/services/helper.service.js"></script>
+	<script src="app/controllers/main.controller.js"></script>
+	<script src="app/components/myHeader/myHeader.directive.js"></script>
+	<script src="app/components/myFooter/myFooter.component.js"></script>
+	<script src="app/appBootstrap.js"></script>
 </body>
 </html>

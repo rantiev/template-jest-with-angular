@@ -1,8 +1,8 @@
-require("angular");
-require("angular-mocks");
+require('angular');
+require('angular-mocks');
 
 require('../app.js');
-require("../controllers/main.controller.js");
+require('./main.controller.js');
 
 describe('MainController', function() {
     let $controller;
@@ -14,7 +14,7 @@ describe('MainController', function() {
 
         inject(function(_$controller_){
             $controller = _$controller_;
-        })
+        });
 
         $scope = {};
         controller = $controller('MainController', { $scope: $scope });

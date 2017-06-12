@@ -1,0 +1,12 @@
+* {
+    padding: 0;
+    magin: 0;
+}
+
+.header,
+.footer {
+    padding: 50px;
+    background: greenyellow;
+
+    font-size: 20px;
+}
