@@ -7,7 +7,8 @@
     function helperService () {
 
         return {
-            checkScheme
+            checkScheme,
+            f1
         };
 
         /**
@@ -19,6 +20,17 @@
          */
         function checkScheme (schemeGiven, schemeRight) {
             return schemeGiven === schemeRight;
+        }
+
+        function f1 (x) {
+            f2(1);
+            f2(2);
+            f2(3);
+            return f2(x);
+        }
+
+        function f2 (x) {
+            return 'called with ' + x;
         }
 
     }
