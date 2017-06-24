@@ -5,7 +5,8 @@
         .controller('MainController', MainController);
 
     function MainController (
-        $scope
+        $scope,
+        helperService
     ) {
         $scope.title = 'Page title!';
         $scope.sum = sum;
@@ -14,6 +15,10 @@
 
         $scope.headerText = 'here';
         $scope.footerText = 'here as well';
+
+         helperService.get$qPromise().then(res => {
+             $scope.promise = res;
+         });
     }
 
     /**
