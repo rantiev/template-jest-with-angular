@@ -3,6 +3,7 @@ require('angular-mocks');
 
 require('../app.js');
 require('./main.controller.js');
+require('../services/helper.service.js');
 
 describe('MainController', function() {
     let $controller;
