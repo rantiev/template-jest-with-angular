@@ -1,9 +1,3 @@
-require('angular');
-require('angular-mocks');
-
-require('../app.js');
-require('./additional.controller.js');
-
 describe('AdditionalController', function() {
     let $controller;
     let $scope;

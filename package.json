@@ -4,7 +4,8 @@
   "description": "This repository contains simple example of jest testing framework configuration for angular app.",
   "main": "index.js",
   "dependencies": {
-    "angular": "1.6.4"
+    "angular": "1.6.4",
+    "lodash": "4.17.4"
   },
   "devDependencies": {
     "angular-mocks": "1.6.4",
@@ -20,6 +21,10 @@
   "jest": {
     "verbose": true,
     "collectCoverage": true,
-    "moduleDirectories": ["node_modules", "app"]
+    "moduleDirectories": [
+      "node_modules",
+      "app"
+    ],
+    "setupTestFrameworkScriptFile": "<rootDir>/jest/jest.init.js"
   }
 }

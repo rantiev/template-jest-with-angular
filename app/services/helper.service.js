@@ -16,7 +16,8 @@
             f2,
             getPromise,
             get$qPromise,
-            getBooks
+            getBooks,
+            useLodash
         };
 
         function checkScheme (schemeGiven, schemeRight) {
@@ -62,6 +63,14 @@
                 url: '/books'
             }).then(res => {
                 return res.data.map(item => `${item.author} - ${item.title}`);
+            });
+        }
+
+        function useLodash () {
+            return _.keys({
+                a:1,
+                b:2,
+                c:3
             });
         }
 

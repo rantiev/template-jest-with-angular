@@ -1,9 +1,3 @@
-require('angular');
-require('angular-mocks');
-
-require('../../app.js');
-require('./myHeader.directive.js');
-
 describe('myHeader', function() {
     let $compile;
     let $rootScope;

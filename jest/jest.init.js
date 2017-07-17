@@ -1,18 +1,23 @@
-/**
- * Everything works without jestConfig as well
- * so we can remove it from package.json jest config
- *
- * if you need to do something before run tests add following to your package.json:
- *
- * "jest": {
- *   "verbose": true,
- *   "setupTestFrameworkScriptFile": "<rootDir>/jestConfig.js",
- *   "moduleDirectories": ["node_modules", "app"]
- * }
- *
- * And save this file as jestConfig.js in your root folder, see example of what you can do there
- * below:
- */
+require('jest');
+
+const _ = require('lodash');
+
+require('angular');
+require('angular-mocks');
+require('modules/subApp.module.js');
+require('app.js');
+require('constants/mockData.constant.js');
+require('services/helper.service.js');
+
+require('controllers/main.controller.js');
+require('controllers/additional.controller.js');
+
+require('components/myHeader/myHeader.directive.js');
+require('components/myFooter/myFooter.component.js');
+
+Object.defineProperty(window, '_', {
+    value: _,
+});
 
 /*
 const mock = () => {

@@ -1,9 +1,3 @@
-require('angular');
-require('angular-mocks');
-
-require('../../app.js');
-require('./myFooter.component.js');
-
 describe('myFooter', function() {
     let $compile;
     let $rootScope;

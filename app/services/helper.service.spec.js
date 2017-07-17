@@ -1,11 +1,3 @@
-require('jest');
-require('angular');
-require('angular-mocks');
-
-require('../app.js');
-require('./helper.service.js');
-require('../constants/mockData.constant.js');
-
 describe('helper service', function () {
     let $httpBackend;
     let $rootScope;
@@ -146,5 +138,9 @@ describe('helper service', function () {
         expect.assertions(1);
         await expect(_helperService.getPromise()).resolves.toEqual('resolved');
     });*/
+
+    it('lodash should be connected properly', () => {
+        expect(helperService.useLodash().join()).toBe('a,b,c');
+    });
 
 });
