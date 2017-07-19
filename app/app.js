@@ -1,7 +1,9 @@
 (function () {
 
-    angular.module('myApp', [
-        'subApp'
-    ]);
+    angular
+        .module('myApp', [
+            'ui.router',
+            'subApp'
+        ]);
 
 })();

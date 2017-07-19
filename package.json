@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "angular": "1.6.4",
+    "angular-ui-router": "1.0.3",
     "lodash": "4.17.4"
   },
   "devDependencies": {
@@ -25,6 +26,6 @@
       "node_modules",
       "app"
     ],
-    "setupTestFrameworkScriptFile": "<rootDir>/jest/jest.init.js"
+    "setupTestFrameworkScriptFile": "<rootDir>/jest.init.js"
   }
 }

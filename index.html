@@ -12,20 +12,30 @@
 	<div class="content">
 		<h1>{{title}}</h1>
 		<p>{{promise}}</p>
+		<a ui-sref="home">home</a>
+		<a ui-sref="page1">page1</a>
+		<a ui-sref="page2">page2</a>
+		<ui-view></ui-view>
 	</div>
 
 	<my-footer text="footerText"></my-footer>
 
 	<script src="node_modules/lodash/lodash.min.js"></script>
 	<script src="node_modules/angular/angular.min.js"></script>
+	<script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
 	<script src="app/modules/subApp.module.js"></script>
 	<script src="app/app.js"></script>
+	<script src="app/app.config.js"></script>
+	<script src="app/app.run.js"></script>
 	<script src="app/constants/mockData.constant.js"></script>
 	<script src="app/services/helper.service.js"></script>
 	<script src="app/controllers/main.controller.js"></script>
 	<script src="app/controllers/additional.controller.js"></script>
+	<script src="app/controllers/home.controller.js"></script>
+	<script src="app/controllers/page1.controller.js"></script>
+	<script src="app/controllers/page2.controller.js"></script>
 	<script src="app/components/myHeader/myHeader.directive.js"></script>
 	<script src="app/components/myFooter/myFooter.component.js"></script>
-	<script src="app/appBootstrap.js"></script>
+	<script src="app/app.bootstrap.js"></script>
 </body>
 </html>
